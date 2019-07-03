@@ -22,3 +22,6 @@ bundle exec rake db:create db:migrate db:seed db:grant_readonly_access --trace
 set +x
 
 echo "deploy/migrate finished"
+
+echo "Making a note that deploy/migrate ran"
+date > /var/tmp/deploy-migrate-ran
